@@ -1,0 +1,6 @@
+data/moe.nyarchlinux.tour.desktop.in
+data/moe.nyarchlinux.tour.appdata.xml.in
+data/moe.nyarchlinux.tour.gschema.xml
+src/main.py
+src/window.py
+src/window.ui

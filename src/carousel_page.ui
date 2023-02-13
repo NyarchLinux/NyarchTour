@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="Adw" version="1.0"/>
+  <object class="GtkBox" id="page">
+    <property name="hexpand">true</property>
+    <property name="vexpand">true</property>
+    <property name="spacing">25</property>
+    <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+    <child>
+      <object class="GtkImage" id="image">
+        <property name="pixel-size">300</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="title">
+        <property name="valign">GTK_ALIGN_CENTER</property>
+        <property name="css-classes">title-1</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="body">
+        <property name="valign">GTK_ALIGN_START</property>
+      </object>
+    </child>
+  </object>
+</interface>
