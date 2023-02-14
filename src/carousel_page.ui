@@ -9,7 +9,6 @@
     <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
     <child>
       <object class="GtkImage" id="image">
-        <property name="pixel-size">300</property>
       </object>
     </child>
     <child>
@@ -21,6 +20,16 @@
     <child>
       <object class="GtkLabel" id="body">
         <property name="valign">GTK_ALIGN_START</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="buttonsBox">
+        <property name="hexpand">true</property>
+        <property name="baseline-position">GTK_BASELINE_POSITION_CENTER</property>
+        <property name="valign">GTK_ALIGN_CENTER</property>
+        <property name="halign">GTK_ALIGN_CENTER</property>
+        <property name="spacing">10</property>
+
       </object>
     </child>
   </object>

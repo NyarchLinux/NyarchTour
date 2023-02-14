@@ -20,6 +20,7 @@
 from gi.repository import Adw
 from gi.repository import Gtk
 from .pages import PAGES
+import subprocess
 @Gtk.Template(resource_path='/moe/nyarchlinux/tour/window.ui')
 class NyarchtourWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'NyarchtourWindow'
@@ -28,6 +29,7 @@ class NyarchtourWindow(Adw.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        self.commands = {}
         for page in PAGES:
             p = self.generate_page(page)
             self.carousel.append(p)
@@ -38,8 +40,33 @@ class NyarchtourWindow(Adw.ApplicationWindow):
         titlelabel = builder.get_object("title")
         bodylabel = builder.get_object("body")
         gtkimage = builder.get_object("image")
+        buttonsBox = builder.get_object("buttonsBox")
+        for button in page['buttons']:
+        	Gtkbutton = Gtk.Button()
+        	button_content = Adw.ButtonContent()
+        	# Set properties
+        	if button["style"] is not None:
+        		Gtkbutton.set_css_classes([button["style"]])
+        	if button["icon"] is not None:
+        		button_content.set_icon_name(button["icon"])
+        		button_content.set_use_underline(True)
+        		button_content.set_label(button["label"])
+        		Gtkbutton.set_child(button_content)
+        	else:
+        		Gtkbutton.set_label(button["label"])
+        	self.commands[Gtkbutton] = button["command"]
+        	Gtkbutton.connect("clicked", self.button_clicked)
+        	buttonsBox.append(Gtkbutton)
 
         titlelabel.set_label(page["title"])
         bodylabel.set_label(page["body"])
         gtkimage.set_from_icon_name(page["icon"])
+        gtkimage.set_pixel_size(page["icon-size"])
         return p
+
+    def button_clicked(self, button):
+        	self.background_process(self.commands[button])
+
+    def background_process(self, command):
+    	subprocess.Popen(["flatpak-spawn",  "--host"] + command.split())
+    

@@ -1,25 +1,35 @@
 PAGES = [
 	{
-		"icon": "go-previous",
+		"icon": "nyarch-logo",
 		"title": "Welcome to Nyarch",
+		"icon-size": 300,
 		"body": "Nyarch Linux is an Arch Linux based Linux distribution to weeb weeb",
 		"buttons": [
 			{
 				"label": "Open Website",
 				"icon": None,
-				"style": None
+				"style": "suggested-action",
+				"command": "xdg-open https://nyarchlinux.moe"
 			}
 		]
 	},
 	{
-		"icon": "go-next",
-		"title": "Welcome to Nyarch",
-		"body": "Nyarch Linux is an Arch Linux based Linux distribution to weeb weeb",
+		"icon": "komikku-screenshots",
+		"icon-size": 300,
+		"title": "Read manga with Komikku",
+		"body": "Komikku is an amazing open source application to read manga from the internet.",
 		"buttons": [
 			{
-				"label": "Open Website",
+				"label": "Project page",
 				"icon": None,
-				"style": None
+				"style": None,
+				"command": "xdg-open https://valos.gitlab.io/Komikku/"
+			},
+			{
+				"label": "Open Komikku",
+				"icon": None,
+				"style": "suggested-action",
+				"command": "faltpak run info.febvre.Komikku"
 			}
 		]
 	}
@@ -30,3 +40,4 @@ PAGES = [
 
 
 ]
+
