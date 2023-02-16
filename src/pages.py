@@ -29,7 +29,7 @@ PAGES = [
 				"label": "Open Komikku",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "faltpak run info.febvre.Komikku"
+				"command": "flatpak run info.febvre.Komikku"
 			}
 		]
 	},
@@ -49,7 +49,7 @@ PAGES = [
 				"label": "Open Komikku",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "faltpak run info.febvre.Komikku"
+				"command": "flatpak run info.febvre.Komikku"
 			}
 		]
 	}
