@@ -28,3 +28,11 @@ install_data (
     'custom-icons/web.svg',
     install_dir: symbolic_dir
 )
+install_data (
+    'custom-icons/right-large-symbolic.svg',
+    install_dir: symbolic_dir
+)
+install_data (
+    'custom-icons/left-large-symbolic.svg',
+    install_dir: symbolic_dir
+)
