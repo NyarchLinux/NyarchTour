@@ -26,6 +26,8 @@ class NyarchtourWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'NyarchtourWindow'
 
     carousel = Gtk.Template.Child("carousel")
+    previous = Gtk.Template.Child("previous")
+    nextbutton = Gtk.Template.Child("next")
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -33,6 +35,28 @@ class NyarchtourWindow(Adw.ApplicationWindow):
         for page in PAGES:
             p = self.generate_page(page)
             self.carousel.append(p)
+        self.carousel.connect("page-changed", self.page_changes)
+        self.nextbutton.connect("clicked", self.next_page)
+        self.previous.connect("clicked", self.previous_page)
+
+    def page_changes(self, carousel, page):
+        if page > 0:
+            self.previous.set_opacity(1)
+        else:
+            self.previous.set_opacity(0)
+        if page >= self.carousel.get_n_pages()-1:
+            self.nextbutton.set_opacity(0)
+        else:
+           self.nextbutton.set_opacity(1)
+    def next_page(self, button):
+        self.carousel.get_position()
+        if self.carousel.get_position() < self.carousel.get_n_pages()-1:
+            self.carousel.scroll_to(self.carousel.get_nth_page(self.carousel.get_position()+1), True)
+
+    def previous_page(self, button):
+        self.carousel.get_position()
+        if self.carousel.get_position() > 0:
+            self.carousel.scroll_to(self.carousel.get_nth_page(self.carousel.get_position()-1), True)
 
     def generate_page(self, page):
         builder = Gtk.Builder.new_from_resource("/moe/nyarchlinux/tour/carousel_page.ui")

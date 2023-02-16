@@ -1,7 +1,7 @@
 {
     "app-id" : "moe.nyarchlinux.tour",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "master",
+    "runtime-version" : "43",
     "sdk" : "org.gnome.Sdk",
     "command" : "nyarchtour",
     "finish-args" : [
@@ -31,7 +31,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "file:///home/francesco/Progetti"
+                    "url" : "."
                 }
             ]
         }
