@@ -25,8 +25,7 @@
                  <property name="opacity">0</property>
                   <property name="icon-name">go-previous</property>
                   <property name="valign">GTK_ALIGN_CENTER</property>
-                  <property name="margin-end">12</property>
-                 <property name="width-request">20</property>
+                  <property name="margin-start">12</property>
                   <style>
                     <class name="circular"></class>
                   </style>
