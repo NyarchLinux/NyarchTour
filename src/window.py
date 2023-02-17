@@ -84,8 +84,8 @@ class NyarchtourWindow(Adw.ApplicationWindow):
 
         titlelabel.set_label(page["title"])
         bodylabel.set_label(page["body"])
-        gtkimage.set_from_icon_name(page["icon"])
-        gtkimage.set_pixel_size(page["icon-size"])
+        gtkimage.set_resource("/moe/nyarchlinux/tour/pictures/" + page["icon"] + ".png")
+        #gtkimage.set_pixel_size(page["icon-size"])
         return p
 
     def button_clicked(self, button):

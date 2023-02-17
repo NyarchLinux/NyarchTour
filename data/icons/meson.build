@@ -17,10 +17,6 @@ install_data (
     install_dir: symbolic_dir
 )
 install_data (
-    'custom-icons/komikku-screenshots.svg',
-    install_dir: symbolic_dir
-)
-install_data (
     'custom-icons/open-in-new.svg',
     install_dir: symbolic_dir
 )
