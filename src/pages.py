@@ -179,7 +179,7 @@ PAGES = [
 				"label": "Run terminal",
 				"icon": None,
 				"style": "suggested-action",
-				"command": 'gnome-terminal'
+				"command": 'kitty nekofetch'
 			}
 		]
 	},
