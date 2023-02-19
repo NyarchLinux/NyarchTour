@@ -16,5 +16,6 @@
     <file compressed="true">pictures/webapps-screenshots.png</file>
     <file compressed="true">pictures/tweaks-screenshots.png</file>
     <file compressed="true">pictures/gnome-screenshot.png</file>
+    <file compressed="true">pictures/fragments-screenshots.png</file>
   </gresource>
 </gresources>

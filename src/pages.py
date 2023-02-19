@@ -116,6 +116,26 @@ PAGES = [
 		]
 	},
 	{
+		"icon": "fragments-screenshots",
+		"icon-size": 400,
+		"title": "Download Torrents with Fragments",
+		"body": "Fragments is an easy to use BitTorrent client. It can be used to transfer files via the BitTorrent protocol.",
+		"buttons": [
+			{
+				"label": "Project page",
+				"icon": None,
+				"style": None,
+				"command": "xdg-open https://gitlab.gnome.org/World/Fragments"
+			},
+			{
+				"label": "Open Fragments",
+				"icon": None,
+				"style": "suggested-action",
+				"command": "flatpak run de.haeckerfelix.Fragments"
+			}
+		]
+	},
+	{
 		"icon": "lollypop-screenshots",
 		"icon-size": 400,
 		"title": "Listen to music with Lollypop",
