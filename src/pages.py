@@ -190,6 +190,20 @@ PAGES = [
 		]
 	},
 	{
+		"icon": "nyarchwizard-screenshots",
+		"icon-size": 400,
+		"title": "Need suggestions?",
+		"body": "Nyarch Wizard will suggest you some software to get started with Nyarch Linux.",
+		"buttons": [
+			{
+				"label": "Open Nyarch Wizard",
+				"icon": None,
+				"style": "suggested-action",
+				"command": "flatpak run moe.nyarchlinux.wizard"
+			}
+		]
+	},
+	{
 		"icon": "terminal-screenshots",
 		"icon-size": 400,
 		"title": "I use Nyarch, btw",
