@@ -1,5 +1,5 @@
 project('nyarchtour',
-          version: '0.3.3',
+          version: '0.3.5',
     meson_version: '>= 0.59.0',
   default_options: [ 'warning_level=2', 'werror=false', ],
 )

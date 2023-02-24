@@ -3,7 +3,7 @@ PAGES = [
 		"icon": "nyarch-logo",
 		"title": "Welcome to Nyarch",
 		"icon-size": 400,
-		"body": "Nyarch Linux is an Arch Linux based Linux distribution to weeb weeb",
+		"body": "Nyarch Linux is based on Arch Linux and aims to create the best experience possible for weebs.",
 		"buttons": [
 			{
 				"label": "Open Website",
@@ -28,6 +28,20 @@ PAGES = [
 		]
 	},
 	{
+		"icon": "nyarchcustomize-screenshots",
+		"icon-size": 400,
+		"title": "Nyarch Customize",
+		"body": "Change your layout quickly and customize animations and appearance",
+		"buttons": [
+			{
+				"label": "Open Nyarch Customize",
+				"icon": None,
+				"style": "suggested-action",
+				"command": "flatpak run moe.nyarchlinux.customize "
+			}
+		]
+	},
+	{
 		"icon": "tweaks-screenshots",
 		"icon-size": 400,
 		"title": "Need advanced customization?",
@@ -45,20 +59,6 @@ PAGES = [
 				"style": "suggested-action",
 				"command": "flatpak run com.mattjakeman.ExtensionManager"
 			},
-		]
-	},
-	{
-		"icon": "nyarchcustomize-screenshots",
-		"icon-size": 400,
-		"title": "Nyarch Customize",
-		"body": "Change your layout quickly and customize animations and appearance",
-		"buttons": [
-			{
-				"label": "Open Nyarch Customize",
-				"icon": None,
-				"style": "suggested-action",
-				"command": "flatpak run moe.nyarchlinux.customize "
-			}
 		]
 	},
 	{
@@ -214,6 +214,34 @@ PAGES = [
 				"icon": None,
 				"style": "suggested-action",
 				"command": 'kitty nekofetch'
+			}
+		]
+	},
+	{
+		"icon": "nyarchscripts-screenshots",
+		"icon-size": 400,
+		"title": "Check out Nyarch Scripts",
+		"body": "Nyarch Scripts provides some interesting and common terminal commands and scripts, ready for execution in one click",
+		"buttons": [
+			{
+				"label": "Run Nyarch Scripts",
+				"icon": None,
+				"style": "suggested-action",
+				"command": 'flatpak run moe.nyarchlinux.scripts'
+			}
+		]
+	},
+	{
+		"icon": "online-account-screenshots",
+		"icon-size": 400,
+		"title": "Keep Synced",
+		"body": "Add you online accounts in settings to keep calendar, contacts, files and emails synced",
+		"buttons": [
+			{
+				"label": "Run Nyarch Scripts",
+				"icon": None,
+				"style": "suggested-action",
+				"command": 'gnome-control-center online-accounts '
 			}
 		]
 	},
