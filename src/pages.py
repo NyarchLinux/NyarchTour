@@ -238,7 +238,7 @@ PAGES = [
 		"body": "Add you online accounts in settings to keep calendar, contacts, files and emails synced",
 		"buttons": [
 			{
-				"label": "Run Nyarch Scripts",
+				"label": "Open Settings",
 				"icon": None,
 				"style": "suggested-action",
 				"command": 'gnome-control-center online-accounts '
