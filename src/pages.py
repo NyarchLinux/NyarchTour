@@ -235,7 +235,7 @@ PAGES = [
 		"icon": "online-account-screenshots",
 		"icon-size": 400,
 		"title": "Keep Synced",
-		"body": "Add you online accounts in settings to keep calendar, contacts, files and emails synced",
+		"body": "Add your online accounts in settings to keep calendar, contacts, files and emails synced",
 		"buttons": [
 			{
 				"label": "Run Nyarch Scripts",
