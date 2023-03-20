@@ -98,7 +98,7 @@ PAGES = [
 	{
 		"icon": "shortwave-screenshots",
 		"icon-size": 400,
-		"title": "Listen to your favoirite weeb radio with Shortwave",
+		"title": "Listen to your favourite weeb radio with Shortwave",
 		"body": "Shortwave is an internet radio player that provides access to a station database with over 30000 stations.",
 		"buttons": [
 			{
