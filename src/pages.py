@@ -17,7 +17,7 @@ PAGES = [
 		"icon": "material_you_screenshot",
 		"icon-size": 400,
 		"title": "Material You",
-		"body": "Choose any waifu as your wallpaper, the desktop and applications themes will automatically adapt their colors to make you feel at home. This is achieved through material you Gnome extension.",
+		"body": "Choose any waifu as your wallpaper, the desktop and applications themes will automatically adapt their colors to make you feel at home. This is achieved through a modified version of material you Gnome extension.",
 		"buttons": [
 			{
 				"label": "Open Settings",
@@ -31,7 +31,7 @@ PAGES = [
 		"icon": "nyarchcustomize-screenshots",
 		"icon-size": 400,
 		"title": "Nyarch Customize",
-		"body": "Change your layout quickly and customize animations and appearance",
+		"body": "Change your layout quickly and customize animations and appearance.",
 		"buttons": [
 			{
 				"label": "Open Nyarch Customize",
