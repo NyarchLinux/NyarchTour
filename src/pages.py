@@ -207,7 +207,7 @@ PAGES = [
 		"icon": "terminal-screenshots",
 		"icon-size": 400,
 		"title": "I use Nyarch, btw",
-		"body": "We have included nyaofetch to tell everyone that you are using Nyarch Linux, and trizen to download packages from Arch User Repository",
+		"body": "We have included nyaofetch to tell everyone that you are using Nyarch Linux, and nyaura to download packages from Arch User Repository and Arch Linux repositories",
 		"buttons": [
 			{
 				"label": "Run terminal",
