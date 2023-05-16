@@ -179,7 +179,7 @@ PAGES = [
 		"icon": "software-screenshots",
 		"icon-size": 400,
 		"title": "Need other apps?",
-		"body": "Download your favourite applications from a vast catalog of applications including Arch Repositories and Flathub from Gnome Software.",
+		"body": "Download your favourite applications from a vast catalog of applications using Gnome Software.",
 		"buttons": [
 			{
 				"label": "Open Gnome Software",
