@@ -1,8 +1,9 @@
 [Desktop Entry]
 Name=Nyarch Tour
+Comment=Explore Nyarch Linux
 Exec=nyarchtour
 Icon=moe.nyarchlinux.tour
 Terminal=false
 Type=Application
-Categories=GTK;
+Categories=GNOME;GTK;Documentation;Utility;
 StartupNotify=true
