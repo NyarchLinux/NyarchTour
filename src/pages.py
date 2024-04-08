@@ -85,7 +85,7 @@ PAGES = [
 				"label": "Open Waifu Downloader",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "flatpak run moe.nyarchlinux.catgirldownloader "
+				"command": "flatpak run moe.nyarchlinux.waifudownloader "
 			}
 		]
 	},
@@ -125,7 +125,7 @@ PAGES = [
 				"label": "Open Shortwave",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "flatpak run de.haeckerfelix.Shortwave"
+				"command": "shortwave"
 			}
 		]
 	},
@@ -145,7 +145,7 @@ PAGES = [
 				"label": "Open Fragments",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "flatpak run de.haeckerfelix.Fragments"
+				"command": "fragments"
 			}
 		]
 	},
@@ -165,7 +165,7 @@ PAGES = [
 				"label": "Open Lollypop",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "flatpak run org.gnome.Lollypop"
+				"command": "lollypop"
 			}
 		]
 	},
