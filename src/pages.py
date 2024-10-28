@@ -37,7 +37,7 @@ PAGES = [
 				"label": "Open Nyarch Customize",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "flatpak run moe.nyarchlinux.customize "
+				"command": "flatpak run moe.nyarchlinux.customize"
 			}
 		]
 	},
@@ -57,7 +57,7 @@ PAGES = [
 				"label": "Open Extension Manager",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "flatpak run com.mattjakeman.ExtensionManager"
+				"command": "extension-manager"
 			},
 		]
 	},
@@ -71,7 +71,7 @@ PAGES = [
 				"label": "Open Catgirl Downloader",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "flatpak run moe.nyarchlinux.catgirldownloader "
+				"command": "flatpak run moe.nyarchlinux.catgirldownloader"
 			}
 		]
 	},
@@ -85,7 +85,7 @@ PAGES = [
 				"label": "Open Waifu Downloader",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "flatpak run moe.nyarchlinux.waifudownloader "
+				"command": "flatpak run moe.nyarchlinux.waifudownloader"
 			}
 		]
 	},
@@ -242,6 +242,34 @@ PAGES = [
 				"icon": None,
 				"style": "suggested-action",
 				"command": 'flatpak run moe.nyarchlinux.scripts'
+			}
+		]
+	},
+	{
+		"icon": "nyarchupdater-screenshots",
+		"icon-size": 400,
+		"title": "Keep your system up to date",
+		"body": "Nyarch Updater will help you keep your system up to date and install Nyarch Linux updates.",
+		"buttons": [
+			{
+				"label": "Run Nyarch Updater",
+				"icon": None,
+				"style": "suggested-action",
+				"command": 'flatpak run moe.nyarchlinux.updater'
+			}
+		]
+	},
+	{
+		"icon": "nyarchassistant-screenshots",
+		"icon-size": 400,
+		"title": "Your Dream Waifu at your command",
+		"body": "Nyarch Assistant is a powerful AI assistant that can help you with your system, do some roleplay and much more thanks to Extensions and customization.",
+		"buttons": [
+			{
+				"label": "Run Nyarch Assistant",
+				"icon": None,
+				"style": "suggested-action",
+				"command": 'flatpak run moe.nyarchlinux.assistant'
 			}
 		]
 	},

@@ -21,5 +21,7 @@
     <file compressed="true">pictures/nyarchscripts-screenshots.png</file>
     <file compressed="true">pictures/online-account-screenshots.png</file>
     <file compressed="true">pictures/waifudownloader-screenshots.png</file>
+    <file compressed="true">pictures/nyarchassistant-screenshots.png</file>
+    <file compressed="true">pictures/nyarchupdater-screenshots.png</file>
   </gresource>
 </gresources>
