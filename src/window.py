@@ -35,7 +35,7 @@ class NyarchtourWindow(Adw.ApplicationWindow):
         self.current_page = 0
         for page in PAGES:
             if "condition" in page and not page["condition"]():
-                return
+                continue
             p = self.generate_page(page)
             self.carousel.append(p)
         self.carousel.connect("page-changed", self.page_changes)
