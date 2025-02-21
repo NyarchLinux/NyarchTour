@@ -32,14 +32,40 @@ class NyarchtourWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.commands = {}
+        self.current_page = 0
         for page in PAGES:
+            if "condition" in page and not page["condition"]():
+                return
             p = self.generate_page(page)
             self.carousel.append(p)
         self.carousel.connect("page-changed", self.page_changes)
         self.nextbutton.connect("clicked", self.next_page)
         self.previous.connect("clicked", self.previous_page)
+        self.connect("close-request", self.on_close_request)
 
+    def on_close_request(self, window):
+        if (self.current_page > 7):
+            return False
+        dialog = Adw.MessageDialog(
+            transient_for=self,
+            title="Confirm Exit",
+            body="Nyarch Tour will guide you through all the Nyarch Linux features.\nAre you sure?",
+            default_response="cancel",
+            close_response="cancel",
+        )
+        dialog.add_response("cancel", "Cancel")
+        dialog.add_response("exit", "Exit")
+        dialog.set_response_appearance("exit", Adw.ResponseAppearance.DESTRUCTIVE)
+        def on_response(dialog, response):
+            if response == "exit":
+                window.destroy()  # Close the window if "Exit" is clicked
+            dialog.destroy()  # Close the dialog
+
+        dialog.connect("response", on_response)
+        dialog.present()
+        return True
     def page_changes(self, carousel, page):
+        self.current_page = page
         if page > 0:
             self.previous.set_opacity(1)
         else:

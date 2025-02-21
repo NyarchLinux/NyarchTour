@@ -54,9 +54,9 @@ class NyarchtourApplication(Adw.Application):
                                 application_name='nyarchtour',
                                 application_icon='moe.nyarchlinux.tour',
                                 developer_name='Francesco Caracciolo',
-                                version='0.1.0',
+                                version='0.4.5',
                                 developers=['Francesco Caracciolo'],
-                                copyright='© 2023 Francesco Caracciolo')
+                                copyright='© 2025 Francesco Caracciolo')
         about.present()
 
     def on_preferences_action(self, widget, _):

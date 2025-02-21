@@ -1,3 +1,22 @@
+import subprocess
+def btrfs_fs():
+    try:
+        script = """if [ "$(findmnt -n -o FSTYPE /)" == "btrfs" ]; then
+          echo 1
+        else
+          echo 0
+        fi
+        """
+        out = subprocess.check_output(["flatpak-spawn", "--host", "bash", "-c", script]).decode("utf-8")
+        out = out.strip()
+        if out == "1":
+            return True
+        else:
+            return False
+    except Exception as e:
+        print(e)
+        return False
+
 PAGES = [
 	{
 		"icon": "nyarch-logo",
@@ -105,7 +124,7 @@ PAGES = [
 				"label": "Open Komikku",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "flatpak run info.febvre.Komikku"
+				"command": "komikku"
 			}
 		]
 	},
@@ -270,6 +289,21 @@ PAGES = [
 				"icon": None,
 				"style": "suggested-action",
 				"command": 'flatpak run moe.nyarchlinux.assistant'
+			},
+		]
+    },
+    {
+		"icon": "timeshift-screenshots",
+		"icon-size": 400,
+		"title": "Take a Time Leap",
+		"body": "With timeshift you can take istant snapshots (backups) of your system and restore them in milliseconds",
+		"condition": btrfs_fs,
+		"buttons": [
+			{
+				"label": "Open Timeshift",
+				"icon": None,
+				"style": "suggested-action",
+				"command": 'pkexec timeshift-gtk'
 			}
 		]
 	},
