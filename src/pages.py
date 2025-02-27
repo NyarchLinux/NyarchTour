@@ -22,7 +22,7 @@ PAGES = [
 		"icon": "nyarch-logo",
 		"title": "Welcome to Nyarch",
 		"icon-size": 400,
-		"body": "Nyarch Linux is based on Arch Linux and aims to create the best experience possible for weebs.",
+		"body": "Nyarch Linux is an Arch Linux based OS and aims to create the best experience possible for weebs.",
 		"buttons": [
 			{
 				"label": "Open Website",
@@ -36,7 +36,7 @@ PAGES = [
 		"icon": "material_you_screenshot",
 		"icon-size": 400,
 		"title": "Material You",
-		"body": "Choose any waifu as your wallpaper, the desktop and applications themes will automatically adapt their colors to make you feel at home. This is achieved through a modified version of material you Gnome extension.",
+		"body": "Choose any waifu as your wallpaper! The desktop and application themes automatically adjust their colors to make you feel at home. This is achieved by a modified version of the Material You Gnome extension.",
 		"buttons": [
 			{
 				"label": "Open Settings",
@@ -64,7 +64,7 @@ PAGES = [
 		"icon": "tweaks-screenshots",
 		"icon-size": 400,
 		"title": "Need advanced customization?",
-		"body": "You can customize your operating system more by editing configurations in Gnome Tweaks, and installing new extensions in Extension Manager.",
+		"body": "You can further customize your operating system by editing configurations in Gnome Tweaks and installing new extensions in the Extension Manager.",
 		"buttons": [
 			{
 				"label": "Open Tweaks",
@@ -84,10 +84,10 @@ PAGES = [
 		"icon": "catgirldownloader-screenshots",
 		"icon-size": 400,
 		"title": "Catgirl Downloader",
-		"body": "This application satisfies one of the most important need that a weeb has: getting some random pictures of cute catgirls whenever you want",
+		"body": "This application satisfies one of the most important needs a weeb has: getting a few random pictures of cute cat girls whenever you want!",
 		"buttons": [
 			{
-				"label": "Open Catgirl Downloader",
+				"label": "Open the Catgirl Downloader",
 				"icon": None,
 				"style": "suggested-action",
 				"command": "flatpak run moe.nyarchlinux.catgirldownloader"
@@ -98,10 +98,10 @@ PAGES = [
 		"icon": "waifudownloader-screenshots",
 		"icon-size": 400,
 		"title": "Waifu Downloader",
-		"body": "This application satisfies one of the most important need that a weeb has: getting some random pictures of cute anime girls whenever you want",
+		"body": "This application satisfies one of the most important needs a weeb has: getting some random pictures of cute anime girls whenever you want!",
 		"buttons": [
 			{
-				"label": "Open Waifu Downloader",
+				"label": "Open the Waifu Downloader",
 				"icon": None,
 				"style": "suggested-action",
 				"command": "flatpak run moe.nyarchlinux.waifudownloader"
@@ -112,7 +112,7 @@ PAGES = [
 		"icon": "komikku-screenshots",
 		"icon-size": 400,
 		"title": "Read manga with Komikku",
-		"body": "Komikku is an amazing open source application to read manga from the internet.",
+		"body": "Komikku is an amazing open source application for reading manga from the internet.",
 		"buttons": [
 			{
 				"label": "Project page",
@@ -131,8 +131,8 @@ PAGES = [
 	{
 		"icon": "shortwave-screenshots",
 		"icon-size": 400,
-		"title": "Listen to your favourite weeb radio with Shortwave",
-		"body": "Shortwave is an internet radio player that provides access to a station database with over 30000 stations.",
+		"title": "Listen to your favorite weeb radio with Shortwave",
+		"body": "Shortwave is an Internet radio player that provides access to a station database with over 30,000 stations.",
 		"buttons": [
 			{
 				"label": "Project page",
@@ -152,7 +152,7 @@ PAGES = [
 		"icon": "fragments-screenshots",
 		"icon-size": 400,
 		"title": "Download Torrents with Fragments",
-		"body": "Fragments is an easy to use BitTorrent client. It can be used to transfer files via the BitTorrent protocol.",
+		"body": "Fragments is an easy-to-use BitTorrent client. It can be used to transfer files via the BitTorrent protocol.",
 		"buttons": [
 			{
 				"label": "Project page",
@@ -172,7 +172,7 @@ PAGES = [
 		"icon": "lollypop-screenshots",
 		"icon-size": 400,
 		"title": "Listen to music with Lollypop",
-		"body": "Lollypop is an amazing lightwaight music player that a party mode, to stream music from the web or to reproduce music from your own collection.",
+		"body": "Lollypop is an amazingly lightweight music player with a party mode for streaming music from the Internet or playing music from your own collection.",
 		"buttons": [
 			{
 				"label": "Project page",
@@ -191,8 +191,8 @@ PAGES = [
 	{
 		"icon": "webapps-screenshots",
 		"icon-size": 400,
-		"title": "Turn your favourite streaming websites into apps",
-		"body": "Webapp manager makes you create apps from websites that integrates with your desktop, it supports extensions and many browsers.",
+		"title": "Turn your favorite (streaming) websites into apps",
+		"body": "With the Webapp Manager, you can create applications from websites that can be integrated into your desktop. It supports extensions and many browsers.",
 		"buttons": [
 			{
 				"label": "Project page",
@@ -212,7 +212,7 @@ PAGES = [
 		"icon": "software-screenshots",
 		"icon-size": 400,
 		"title": "Need other apps?",
-		"body": "Download your favourite applications from a vast catalog of applications using Gnome Software.",
+		"body": "Download your favorite applications from an extensive catalog of applications with Gnome Software.",
 		"buttons": [
 			{
 				"label": "Open Gnome Software",
@@ -226,10 +226,10 @@ PAGES = [
 		"icon": "nyarchwizard-screenshots",
 		"icon-size": 400,
 		"title": "Need suggestions?",
-		"body": "Nyarch Wizard will suggest you some software to get started with Nyarch Linux.",
+		"body": "The Nyarch Wizard will suggest some software to get you started with Nyarch Linux.",
 		"buttons": [
 			{
-				"label": "Open Nyarch Wizard",
+				"label": "Open the Nyarch Wizard",
 				"icon": None,
 				"style": "suggested-action",
 				"command": "flatpak run moe.nyarchlinux.wizard"
@@ -240,10 +240,10 @@ PAGES = [
 		"icon": "terminal-screenshots",
 		"icon-size": 400,
 		"title": "I use Nyarch, btw",
-		"body": "We have included nyaofetch to tell everyone that you are using Nyarch Linux, and nyaura to download packages from Arch User Repository and Arch Linux repositories",
+		"body": "We have included nyaofetch to let everyone know that you are using Nyarch Linux, and nyaura to download packages from the Arch User Repository and Arch Linux repositories.",
 		"buttons": [
 			{
-				"label": "Run terminal",
+				"label": "Run in terminal",
 				"icon": None,
 				"style": "suggested-action",
 				"command": 'kitty nekofetch'
@@ -254,10 +254,10 @@ PAGES = [
 		"icon": "nyarchscripts-screenshots",
 		"icon-size": 400,
 		"title": "Check out Nyarch Scripts",
-		"body": "Nyarch Scripts provides some interesting and common terminal commands and scripts, ready for execution in one click",
+		"body": "Nyarch Scripts offers some interesting and common terminal commands and scripts that can be executed with one click.",
 		"buttons": [
 			{
-				"label": "Run Nyarch Scripts",
+				"label": "Run some Nyarch Scripts",
 				"icon": None,
 				"style": "suggested-action",
 				"command": 'flatpak run moe.nyarchlinux.scripts'
@@ -268,10 +268,10 @@ PAGES = [
 		"icon": "nyarchupdater-screenshots",
 		"icon-size": 400,
 		"title": "Keep your system up to date",
-		"body": "Nyarch Updater will help you keep your system up to date and install Nyarch Linux updates.",
+		"body": "Nyarch Updater helps you to keep your system up to date and install Nyarch Linux updates.",
 		"buttons": [
 			{
-				"label": "Run Nyarch Updater",
+				"label": "Run the Nyarch Updater",
 				"icon": None,
 				"style": "suggested-action",
 				"command": 'flatpak run moe.nyarchlinux.updater'
@@ -281,11 +281,11 @@ PAGES = [
 	{
 		"icon": "nyarchassistant-screenshots",
 		"icon-size": 400,
-		"title": "Your Dream Waifu at your command",
-		"body": "Nyarch Assistant is a powerful AI assistant that can help you with your system, do some roleplay and much more thanks to Extensions and customization.",
+		"title": "Your dream waifu at your command",
+		"body": "The Nyarch Assistant is a powerful AI assistant that can help you with your system, roleplay and much more thanks to the extensions and customizations.",
 		"buttons": [
 			{
-				"label": "Run Nyarch Assistant",
+				"label": "Run the Nyarch Assistant",
 				"icon": None,
 				"style": "suggested-action",
 				"command": 'flatpak run moe.nyarchlinux.assistant'
@@ -295,8 +295,8 @@ PAGES = [
     {
 		"icon": "timeshift-screenshots",
 		"icon-size": 400,
-		"title": "Take a Time Leap",
-		"body": "With timeshift you can take istant snapshots (backups) of your system and restore them in milliseconds",
+		"title": "Take a leap in time",
+		"body": "With timeshift you can create snapshots (backups) of your system in the shortest possible time and restore them in milliseconds.",
 		"condition": btrfs_fs,
 		"buttons": [
 			{
@@ -310,8 +310,8 @@ PAGES = [
 	{
 		"icon": "online-account-screenshots",
 		"icon-size": 400,
-		"title": "Keep Synced",
-		"body": "Add your online accounts in settings to keep calendar, contacts, files and emails synced",
+		"title": "Stay synced",
+		"body": "Add your online accounts in the settings to synchronize calendars, contacts, files and emails.",
 		"buttons": [
 			{
 				"label": "Open Settings",
@@ -324,11 +324,11 @@ PAGES = [
 	{
 		"icon": "gnome-screenshot",
 		"icon-size": 400,
-		"title": "Discover more about the desktop",
-		"body": "Run Gnome Tour to learn more about desktop navigation and touchpad gestures",
+		"title": "Discover more about your desktop",
+		"body": "Run Gnome Tour to learn more about desktop navigation and touchpad gestures.",
 		"buttons": [
 			{
-				"label": "Open Tour",
+				"label": "Start Tour",
 				"icon": None,
 				"style": "suggested-action",
 				"command": 'gnome-tour'
