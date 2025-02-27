@@ -22,7 +22,7 @@ PAGES = [
 		"icon": "nyarch-logo",
 		"title": "Welcome to Nyarch",
 		"icon-size": 400,
-		"body": "Nyarch Linux is an Arch Linux based OS and aims to create the best experience possible for weebs.",
+		"body": "Nyarch Linux is an Arch Linux-based OS that aims to create the best possible experience for weebs.",
 		"buttons": [
 			{
 				"label": "Open Website",
