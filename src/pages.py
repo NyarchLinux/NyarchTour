@@ -84,7 +84,7 @@ PAGES = [
 		"icon": "catgirldownloader-screenshots",
 		"icon-size": 400,
 		"title": "Catgirl Downloader",
-		"body": "This application satisfies one of the most important needs a weeb has: getting a few random pictures of cute cat girls whenever you want!",
+		"body": "This application satisfies one of the most important needs a weeb has: getting random pictures of cute cat girls whenever you want!",
 		"buttons": [
 			{
 				"label": "Open the Catgirl Downloader",
@@ -98,7 +98,7 @@ PAGES = [
 		"icon": "waifudownloader-screenshots",
 		"icon-size": 400,
 		"title": "Waifu Downloader",
-		"body": "This application satisfies one of the most important needs a weeb has: getting some random pictures of cute anime girls whenever you want!",
+		"body": "This application satisfies one of the most important needs a weeb has: getting random pictures of cute anime girls whenever you want!",
 		"buttons": [
 			{
 				"label": "Open the Waifu Downloader",
@@ -131,7 +131,7 @@ PAGES = [
 	{
 		"icon": "shortwave-screenshots",
 		"icon-size": 400,
-		"title": "Listen to your favorite weeb radio with Shortwave",
+		"title": "Listen to your favourite weeb radio with Shortwave",
 		"body": "Shortwave is an Internet radio player that provides access to a station database with over 30,000 stations.",
 		"buttons": [
 			{
@@ -296,7 +296,7 @@ PAGES = [
 		"icon": "timeshift-screenshots",
 		"icon-size": 400,
 		"title": "Take a leap in time",
-		"body": "With timeshift you can create snapshots (backups) of your system in the shortest possible time and restore them in milliseconds.",
+		"body": "With timeshift you can create snapshots (backups) of your system instantly and restore them in milliseconds.",
 		"condition": btrfs_fs,
 		"buttons": [
 			{
