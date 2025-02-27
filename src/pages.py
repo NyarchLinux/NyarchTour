@@ -87,7 +87,7 @@ PAGES = [
 		"body": "This application satisfies one of the most important needs a weeb has: getting random pictures of cute cat girls whenever you want!",
 		"buttons": [
 			{
-				"label": "Open the Catgirl Downloader",
+				"label": "Open Catgirl Downloader",
 				"icon": None,
 				"style": "suggested-action",
 				"command": "flatpak run moe.nyarchlinux.catgirldownloader"
@@ -101,7 +101,7 @@ PAGES = [
 		"body": "This application satisfies one of the most important needs a weeb has: getting random pictures of cute anime girls whenever you want!",
 		"buttons": [
 			{
-				"label": "Open the Waifu Downloader",
+				"label": "Open Waifu Downloader",
 				"icon": None,
 				"style": "suggested-action",
 				"command": "flatpak run moe.nyarchlinux.waifudownloader"
@@ -229,7 +229,7 @@ PAGES = [
 		"body": "The Nyarch Wizard will suggest some software to get you started with Nyarch Linux.",
 		"buttons": [
 			{
-				"label": "Open the Nyarch Wizard",
+				"label": "Open Nyarch Wizard",
 				"icon": None,
 				"style": "suggested-action",
 				"command": "flatpak run moe.nyarchlinux.wizard"
