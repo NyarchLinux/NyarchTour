@@ -192,7 +192,7 @@ PAGES = [
 		"icon": "webapps-screenshots",
 		"icon-size": 400,
 		"title": "Turn your favorite (streaming) websites into apps",
-		"body": "With the Webapp Manager, you can create applications from websites that can be integrated into your desktop. It supports extensions and many browsers.",
+		"body": "With the Webapp Manager, you can create applications from websites that integrate into your desktop. It supports extensions and many browsers.",
 		"buttons": [
 			{
 				"label": "Project page",
@@ -257,7 +257,7 @@ PAGES = [
 		"body": "Nyarch Scripts offers some interesting and common terminal commands and scripts that can be executed with one click.",
 		"buttons": [
 			{
-				"label": "Run some Nyarch Scripts",
+				"label": "Run Nyarch Scripts",
 				"icon": None,
 				"style": "suggested-action",
 				"command": 'flatpak run moe.nyarchlinux.scripts'
@@ -271,7 +271,7 @@ PAGES = [
 		"body": "Nyarch Updater helps you to keep your system up to date and install Nyarch Linux updates.",
 		"buttons": [
 			{
-				"label": "Run the Nyarch Updater",
+				"label": "Run Nyarch Updater",
 				"icon": None,
 				"style": "suggested-action",
 				"command": 'flatpak run moe.nyarchlinux.updater'
@@ -282,10 +282,10 @@ PAGES = [
 		"icon": "nyarchassistant-screenshots",
 		"icon-size": 400,
 		"title": "Your dream waifu at your command",
-		"body": "The Nyarch Assistant is a powerful AI assistant that can help you with your system, roleplay and much more thanks to the extensions and customizations.",
+		"body": "The Nyarch Assistant is a powerful AI assistant that can help you with your system, roleplay and much more thanks to extensions and customizations.",
 		"buttons": [
 			{
-				"label": "Run the Nyarch Assistant",
+				"label": "Run Nyarch Assistant",
 				"icon": None,
 				"style": "suggested-action",
 				"command": 'flatpak run moe.nyarchlinux.assistant'
@@ -295,7 +295,7 @@ PAGES = [
     {
 		"icon": "timeshift-screenshots",
 		"icon-size": 400,
-		"title": "Take a leap in time",
+		"title": "Take a Time Leap",
 		"body": "With timeshift you can create snapshots (backups) of your system instantly and restore them in milliseconds.",
 		"condition": btrfs_fs,
 		"buttons": [
