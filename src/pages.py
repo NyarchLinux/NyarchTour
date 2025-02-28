@@ -226,7 +226,7 @@ PAGES = [
 		"icon": "nyarchwizard-screenshots",
 		"icon-size": 400,
 		"title": "Need suggestions?",
-		"body": "The Nyarch Wizard will suggest some software to get you started with Nyarch Linux.",
+		"body": "Nyarch Wizard will suggest some software to get you started with Nyarch Linux.",
 		"buttons": [
 			{
 				"label": "Open Nyarch Wizard",
