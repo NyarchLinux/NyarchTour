@@ -95,20 +95,6 @@ PAGES = [
 		]
 	},
 	{
-		"icon": "waifudownloader-screenshots",
-		"icon-size": 400,
-		"title": "Waifu Downloader",
-		"body": "This application satisfies one of the most important needs a weeb has: getting random pictures of cute anime girls whenever you want!",
-		"buttons": [
-			{
-				"label": "Open Waifu Downloader",
-				"icon": None,
-				"style": "suggested-action",
-				"command": "flatpak run moe.nyarchlinux.waifudownloader"
-			}
-		]
-	},
-	{
 		"icon": "komikku-screenshots",
 		"icon-size": 400,
 		"title": "Read manga with Komikku",
