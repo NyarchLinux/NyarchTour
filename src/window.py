@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
-
+import os
 from gi.repository import Adw
 from gi.repository import Gtk
 from .pages import PAGES
@@ -84,6 +84,29 @@ class NyarchtourWindow(Adw.ApplicationWindow):
         if self.carousel.get_position() > 0:
             self.carousel.scroll_to(self.carousel.get_nth_page(self.carousel.get_position()-1), True)
 
+    def is_flatpak(self) -> bool:
+        """
+        Check if we are in a flatpak
+
+        Returns:
+            bool: True if we are in a flatpak
+        """
+        if os.getenv("container"):
+            return True
+        return False
+    
+    def get_spawn_command(self) -> list:
+        """
+        Get the spawn command to run commands on the user system
+
+        Returns:
+            list: space diveded command  
+        """
+        if self.is_flatpak():
+            return ["flatpak-spawn", "--host"]
+        else:
+            return []
+
     def generate_page(self, page):
         builder = Gtk.Builder.new_from_resource("/moe/nyarchlinux/tour/carousel_page.ui")
         p = builder.get_object("page")
@@ -118,5 +141,5 @@ class NyarchtourWindow(Adw.ApplicationWindow):
         	self.background_process(self.commands[button])
 
     def background_process(self, command):
-    	subprocess.Popen(["flatpak-spawn",  "--host"] + command.split())
+    	subprocess.Popen(self.get_spawn_command() + command.split())
     

@@ -1,4 +1,29 @@
 import subprocess
+import os
+
+def is_flatpak() -> bool:
+    """
+    Check if we are in a flatpak
+
+    Returns:
+        bool: True if we are in a flatpak
+    """
+    if os.getenv("container"):
+        return True
+    return False
+
+def get_spawn_command() -> list:
+    """
+    Get the spawn command to run commands on the user system
+
+    Returns:
+        list: space diveded command  
+    """
+    if is_flatpak():
+        return ["flatpak-spawn", "--host"]
+    else:
+        return []
+
 def btrfs_fs():
     try:
         script = """if [ "$(findmnt -n -o FSTYPE /)" == "btrfs" ]; then
@@ -7,7 +32,7 @@ def btrfs_fs():
           echo 0
         fi
         """
-        out = subprocess.check_output(["flatpak-spawn", "--host", "bash", "-c", script]).decode("utf-8")
+        out = subprocess.check_output(get_spawn_command() + ["bash", "-c", script]).decode("utf-8")
         out = out.strip()
         if out == "1":
             return True
@@ -56,7 +81,7 @@ PAGES = [
 				"label": "Open Nyarch Customize",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "flatpak run moe.nyarchlinux.customize"
+				"command": "nyarchcustomize"
 			}
 		]
 	},
@@ -90,7 +115,7 @@ PAGES = [
 				"label": "Open Catgirl Downloader",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "flatpak run moe.nyarchlinux.catgirldownloader"
+				"command": "catgirldownloader"
 			}
 		]
 	},
@@ -198,13 +223,13 @@ PAGES = [
 		"icon": "software-screenshots",
 		"icon-size": 400,
 		"title": "Need other apps?",
-		"body": "Download your favorite applications from an extensive catalog of applications with Gnome Software.",
+		"body": "Download your favorite applications from an extensive catalog of applications with Bazaar.",
 		"buttons": [
 			{
 				"label": "Open Gnome Software",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "gnome-software"
+				"command": "bazaar"
 			}
 		]
 	},
@@ -218,7 +243,7 @@ PAGES = [
 				"label": "Open Nyarch Wizard",
 				"icon": None,
 				"style": "suggested-action",
-				"command": "flatpak run moe.nyarchlinux.wizard"
+				"command": "nyarchwizard"
 			}
 		]
 	},
@@ -232,7 +257,7 @@ PAGES = [
 				"label": "Run in terminal",
 				"icon": None,
 				"style": "suggested-action",
-				"command": 'kitty nekofetch'
+				"command": 'ghostty -e nekofetch'
 			}
 		]
 	},
@@ -246,7 +271,7 @@ PAGES = [
 				"label": "Run Nyarch Scripts",
 				"icon": None,
 				"style": "suggested-action",
-				"command": 'flatpak run moe.nyarchlinux.scripts'
+				"command": 'nyarchscripts'
 			}
 		]
 	},
@@ -260,7 +285,7 @@ PAGES = [
 				"label": "Run Nyarch Updater",
 				"icon": None,
 				"style": "suggested-action",
-				"command": 'flatpak run moe.nyarchlinux.updater'
+				"command": 'nyarchupdater'
 			}
 		]
 	},
@@ -274,7 +299,7 @@ PAGES = [
 				"label": "Run Nyarch Assistant",
 				"icon": None,
 				"style": "suggested-action",
-				"command": 'flatpak run moe.nyarchlinux.assistant'
+				"command": 'nyarchassistant'
 			},
 		]
     },
