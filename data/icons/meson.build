@@ -25,10 +25,10 @@ install_data (
     install_dir: symbolic_dir
 )
 install_data (
-    'custom-icons/right-large-symbolic.svg',
+    'custom-icons/tour-left-large-symbolic.svg',
     install_dir: symbolic_dir
 )
 install_data (
-    'custom-icons/left-large-symbolic.svg',
+    'custom-icons/tour-right-large-symbolic.svg',
     install_dir: symbolic_dir
 )

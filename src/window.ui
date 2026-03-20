@@ -23,7 +23,7 @@
              <child>
                <object class="GtkButton" id="previous">
                  <property name="opacity">0</property>
-                  <property name="icon-name">left-large-symbolic</property>
+                 <property name="icon-name">tour-left-large-symbolic</property>
                   <property name="valign">GTK_ALIGN_CENTER</property>
                   <property name="margin-start">12</property>
                   <style>
@@ -42,7 +42,7 @@
               </child>
               <child>
                 <object class="GtkButton" id="next">
-                  <property name="icon-name">right-large-symbolic</property>
+                  <property name="icon-name">tour-right-large-symbolic</property>
                   <property name="valign">GTK_ALIGN_CENTER</property>
                   <property name="margin-end">12</property>
                   <style>
