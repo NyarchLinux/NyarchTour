@@ -257,7 +257,7 @@ PAGES = [
 				"label": "Run in terminal",
 				"icon": None,
 				"style": "suggested-action",
-				"command": 'ghostty -e nekofetch'
+				"command": 'kitty nekofetch'
 			}
 		]
 	},
