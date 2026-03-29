@@ -220,13 +220,13 @@ PAGES = [
 		]
 	},
 	{
-		"icon": "software-screenshots",
+		"icon": "bazaar-screenshots",
 		"icon-size": 400,
 		"title": "Need other apps?",
 		"body": "Download your favorite applications from an extensive catalog of applications with Bazaar.",
 		"buttons": [
 			{
-				"label": "Open Gnome Software",
+				"label": "Open Bazaar",
 				"icon": None,
 				"style": "suggested-action",
 				"command": "bazaar"
