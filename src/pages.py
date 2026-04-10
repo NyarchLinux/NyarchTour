@@ -271,7 +271,7 @@ PAGES = [
 				"label": "Run Nyarch Scripts",
 				"icon": None,
 				"style": "suggested-action",
-				"command": 'nyarchscripts'
+				"command": 'nyarchscript'
 			}
 		]
 	},
