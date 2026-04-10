@@ -285,7 +285,7 @@ PAGES = [
 				"label": "Run Nyarch Updater",
 				"icon": None,
 				"style": "suggested-action",
-				"command": 'nyarchupdater'
+				"command": 'moe.nyarchlinux.updater'
 			}
 		]
 	},
