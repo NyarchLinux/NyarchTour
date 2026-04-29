@@ -303,6 +303,25 @@ PAGES = [
 			},
 		]
     },
+	{
+		"icon": "nekoplay-screenshots",
+		"title": "Watch anime with Nekoplay",
+		"body": "Nekoplay is a video player specifically created for anime. It features options for 4K upscaling and 90s skip.",
+		"buttons": [
+			{
+				"label": "Project page",
+				"icon": None,
+				"style": None,
+				"command": "xdg-open https://github.com/NyarchLinux/NekoPlay"
+			},
+			{
+				"label": "Open Nekoplay",
+				"icon": None,
+				"style": "suggested-action",
+				"command": "nekoplay"
+			}
+		]
+	},
     {
 		"icon": "timeshift-screenshots",
 		"icon-size": 400,
